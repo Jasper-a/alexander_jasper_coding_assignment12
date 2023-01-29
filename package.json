@@ -1,8 +1,10 @@
 {
-  "name": "firstcomponent",
-  "version": "1.0.0",
+  "name": "@jasper-a/alexander_jasper_coding_assignment12",
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/jasper-a"
+  },
+  "version": "2.0.0",
   "description": "",
-  "main": "index.js",
   "scripts": {
     "rollup": "rollup -c"
   },
