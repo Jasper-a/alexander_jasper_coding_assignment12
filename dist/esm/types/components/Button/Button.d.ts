@@ -1,7 +1,4 @@
-/// <reference types="react" />
-import "./Button.css";
-export interface ButtonProps {
-    label: String;
-}
-declare const Button: (props: ButtonProps) => JSX.Element;
+import { FC } from 'react';
+import { ButtonProps } from "./Button.types";
+declare const Button: FC<ButtonProps>;
 export default Button;

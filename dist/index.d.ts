@@ -1,7 +1,13 @@
-/// <reference types="react" />
+import { MouseEventHandler, FC } from 'react';
+
 interface ButtonProps {
-    label: String;
+    text?: string;
+    primary?: boolean;
+    disabled?: boolean;
+    size?: "small" | "medium" | "large";
+    onClick?: MouseEventHandler<HTMLButtonElement>;
 }
-declare const Button: (props: ButtonProps) => JSX.Element;
+
+declare const Button: FC<ButtonProps>;
 
 export { Button };

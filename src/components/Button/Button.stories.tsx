@@ -1,23 +1,59 @@
-import React from "react";
-import { ComponentStory, ComponentMeta } from "@storybook/react";
-import Button from "./Button";
+import React from 'react';
+import { Story, Meta } from '@storybook/react';
 
-// More on default export: https://storybook.js.org/docs/react/writing-stories/introduction#default-export
+import Button  from './Button';
+import {ButtonProps} from "./Button.types"
+
 export default {
-  title: "ReactComponentLibrary/Button",
+  title: 'Marbella/Button',
   component: Button,
-} as ComponentMeta<typeof Button>;
+  argTypes: {
+  },
+} as Meta<typeof Button>;
 
-// More on component templates: https://storybook.js.org/docs/react/writing-stories/introduction#using-args
-const Template: ComponentStory<typeof Button> = (args) => <Button {...args} />;
+const Template: Story<ButtonProps> = (args) => <Button {...args} />;
 
-export const HelloWorld = Template.bind({});
-// More on args: https://storybook.js.org/docs/react/writing-stories/args
-HelloWorld.args = {
-  label: "Hello world!",
+export const Primary = Template.bind({});
+Primary.args = {
+  primary: true,
+  disabled: false,
+  text: 'Primary',
 };
 
-export const ClickMe = Template.bind({});
-ClickMe.args = {
-  label: "Click me!",
+export const Secondary = Template.bind({});
+Secondary.args = {
+  primary: false,
+  disabled: false,
+  text: "Secondary",
+};
+
+export const Disabled = Template.bind({});
+Disabled.args = {
+  primary: false,
+  disabled: true,
+  text: 'Disabled',
+};
+
+export const Small = Template.bind({});
+Small.args = {
+  primary: true,
+  disabled: false,
+  size:"small",
+  text: 'Small',
+};
+
+export const Medium = Template.bind({});
+Medium.args = {
+  primary: true,
+  disabled: false,
+  size:"medium",
+  text: 'Medium',
+};
+
+export const Large = Template.bind({});
+Large.args = {
+  primary: true,
+  disabled: false,
+  size:"large",
+  text: 'Large',
 };
