@@ -1,8 +1,10 @@
 import {  MouseEventHandler } from "react";
 
 export interface CardProps {
+    title?: string,
     text?: string,
     disabled?: boolean,
     backgroundColor?: string,
-    onClick?: MouseEventHandler<HTMLCardElement>
+    src?: string,
+    img_width?: int
 };

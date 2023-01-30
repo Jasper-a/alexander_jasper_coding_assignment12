@@ -17,6 +17,8 @@ Enabled.args = {
   backgroundColor: "#FFFFFF",
   disabled: false,
   text: 'Enabled Enabled Enabled Enabled',
+  display: "inline-block",
+  bold: false,
 };
 
 export const Disabled = Template.bind({});
@@ -24,4 +26,6 @@ Disabled.args = {
   backgroundColor: "#FFFFFF",
   disabled: true,
   text: 'Disabled Disabled Disabled Disabled',
+  display: "inline-block",
+  bold: false,
 };

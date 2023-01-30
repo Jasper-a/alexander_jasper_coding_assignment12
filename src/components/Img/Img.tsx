@@ -5,7 +5,7 @@ import {ImgProps} from "./Img.types"
 
 const StyledImg = styled.img<ImgProps>`
     display: inline-block;
-    padding: 9px 30px 11px;
+    padding: 10px 10px;
     width: ${props => props.width}px;
     background-color: ${props => props.backgroundColor};
     cursor: ${props => props.disabled ? "not-allowed" : "cursor"};

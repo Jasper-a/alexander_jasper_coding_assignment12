@@ -1,8 +1,9 @@
 import {  MouseEventHandler } from "react";
 
 export interface HeroCardProps {
+    title?: string,
     text?: string,
     disabled?: boolean,
     backgroundColor?: string,
-    onClick?: MouseEventHandler<HTMLHeroCardElement>
+    img_width?: int
 };

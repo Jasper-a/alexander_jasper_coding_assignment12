@@ -16,16 +16,12 @@ export const Enabled = Template.bind({});
 Enabled.args = {
   backgroundColor: "#9999AA",
   disabled: false,
-  option1: 'This',
-  option1: 'That',
-  option1: 'They',
+  option: 'This',
 };
 
 export const Disabled = Template.bind({});
 Disabled.args = {
   backgroundColor: "#9999AA",
   disabled: true,
-  option1: 'This',
-  option1: 'That',
-  option1: 'They',
+  option: 'This',
 };

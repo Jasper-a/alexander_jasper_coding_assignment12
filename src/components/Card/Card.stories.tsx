@@ -16,12 +16,18 @@ export const Enabled = Template.bind({});
 Enabled.args = {
   backgroundColor: "#9999AA",
   disabled: false,
+  title: 'Enabled',
   text: 'Enabled',
+  src: 'https://i.kym-cdn.com/entries/icons/mobile/000/018/012/this_is_fine.jpg',
+  img_width: 250,
 };
 
 export const Disabled = Template.bind({});
 Disabled.args = {
   backgroundColor: "#9999AA",
   disabled: true,
+  title: 'Disabled',
   text: 'Disabled',
+  src: 'https://i.kym-cdn.com/entries/icons/mobile/000/018/012/this_is_fine.jpg',
+  img_width: 250,
 };

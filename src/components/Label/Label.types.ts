@@ -4,5 +4,6 @@ export interface LabelProps {
     text?: string,
     disabled?: boolean,
     backgroundColor?: string,
-    onClick?: MouseEventHandler<HTMLLabelElement>
+    onClick?: MouseEventHandler<HTMLButtonElement>,
+    for_id?: string
 };

@@ -3,7 +3,7 @@ import styled from 'styled-components';
 
 import {DropdownProps} from "./Dropdown.types"
 
-const StyledSelect = styled.dropdown<DropdownProps>`
+const StyledSelect = styled.select<DropdownProps>`
     line-height: 1;
     font-size: 15px;
     font-weight: 700;
@@ -20,7 +20,7 @@ const StyledSelect = styled.dropdown<DropdownProps>`
 
 const Dropdown: FC<DropdownProps> = ({disabled, backgroundColor, onClick, option1, option2, option3, ...props}) => {
     return (
-        <StyledSelect type="select" onClick={onClick} disabled={disabled} backgroundColor={backgroundColor} {...props}>
+        <StyledSelect onClick={onClick} disabled={disabled} backgroundColor={backgroundColor} {...props}>
             <option value={option1}>{option1}</option>
             <option value={option2}>{option2}</option>
             <option value={option3}>{option3}</option>

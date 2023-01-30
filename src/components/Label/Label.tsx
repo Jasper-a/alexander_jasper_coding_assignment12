@@ -18,9 +18,9 @@ const StyledLabel = styled.label<LabelProps>`
     opacity: ${props => props.disabled ? 0.5 : 1};
 `;
 
-const Label: FC<LabelProps> = ({disabled, text, backgroundColor, onClick, ...props}) => {
+const Label: FC<LabelProps> = ({for_id, disabled, text, backgroundColor, onClick, ...props}) => {
     return (
-        <StyledLabel type="label" onClick={onClick} disabled={disabled} backgroundColor={backgroundColor} {...props}>
+        <StyledLabel for={for_id} onClick={onClick} disabled={disabled} backgroundColor={backgroundColor} {...props}>
             {text}
         </StyledLabel>
     )

@@ -2,14 +2,18 @@
 * label
 * text
 table (need header, row, cell, footer)
-dropdown (broken)
-radio button (broken)
+* dropdown
+* radio button
 * img
 hero image (broken)
-card (broken)
+* card
 
 all:
 remove pointer cursor and onClick as needed
 ensure test succeeds ( {name:"test"}?? )
+styled.* needs proper element name
+is onClick broken? (*.types.ts HTML*Element)
 
-consider ID for label, dropdown, radiobutton?
+text:
+add centering option (use in card and herocard)
+add size option (use in card and herocard)

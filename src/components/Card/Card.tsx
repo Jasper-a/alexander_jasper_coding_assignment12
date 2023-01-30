@@ -1,27 +1,26 @@
 import React,{FC} from 'react';
 import styled from 'styled-components';
 
-import {CardProps} from "./Card.types"
+import {CardProps} from "./Card.types";
+import Img from "../Img/Img";
+import Text from "../Text/Text";
 
-const StyledCard = styled.card<CardProps>`
-    line-height: 1;
-    font-size: 15px;
-    font-weight: 700;
-    font-weight: bold;
-    border-radius: 3px;
+const StyledCard = styled.div<CardProps>`
     display: inline-block;
-    padding: 9px 30px 11px;
     border: 0;
+    border-radius: 3;
     color: #000000;
     background-color: ${props => props.backgroundColor};
-    cursor: ${props => props.disabled ? "not-allowed" : "pointer"};
+    cursor: ${props => props.disabled ? "not-allowed" : "cursor"};
     opacity: ${props => props.disabled ? 0.5 : 1};
 `;
 
-const Card: FC<CardProps> = ({disabled, text, backgroundColor, onClick, ...props}) => {
+const Card: FC<CardProps> = ({disabled, title, text, src, img_width, backgroundColor, onClick, ...props}) => {
     return (
-        <StyledCard type="card" onClick={onClick} disabled={disabled} backgroundColor={backgroundColor} {...props}>
-            {text}
+        <StyledCard disabled={disabled} backgroundColor={backgroundColor} {...props}>
+        <Img src={src} width={img_width} />
+        <Text text={title} display="block" bold="true" />
+        <Text text={text} display="block" />
         </StyledCard>
     )
 };

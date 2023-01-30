@@ -20,7 +20,7 @@ const StyledButton = styled.button<ButtonProps>`
 
 const Button: FC<ButtonProps> = ({disabled, text, backgroundColor, onClick, ...props}) => {
     return (
-        <StyledButton type="button" onClick={onClick} disabled={disabled} backgroundColor={backgroundColor} {...props}>
+        <StyledButton onClick={onClick} disabled={disabled} backgroundColor={backgroundColor} {...props}>
             {text}
         </StyledButton>
     )

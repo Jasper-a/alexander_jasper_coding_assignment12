@@ -1,27 +1,19 @@
 import React,{FC} from 'react';
 import styled from 'styled-components';
 
-import {HeroCardProps} from "./HeroCard.types"
+import {HeroCardProps} from "./HeroCard.types";
+import Card from "../Card/Card";
 
-const StyledHeroCard = styled.herocard<HeroCardProps>`
-    line-height: 1;
-    font-size: 15px;
-    font-weight: 700;
-    font-weight: bold;
-    border-radius: 3px;
-    display: inline-block;
-    padding: 9px 30px 11px;
-    border: 0;
-    color: #000000;
+const StyledHeroCard = styled.div<HeroCardProps>`
     background-color: ${props => props.backgroundColor};
-    cursor: ${props => props.disabled ? "not-allowed" : "pointer"};
+    cursor: ${props => props.disabled ? "not-allowed" : "cursor"};
     opacity: ${props => props.disabled ? 0.5 : 1};
 `;
 
-const HeroCard: FC<HeroCardProps> = ({disabled, text, backgroundColor, onClick, ...props}) => {
+const HeroCard: FC<HeroCardProps> = ({disabled, title, text, backgroundColor, img_width ...props}) => {
     return (
-        <StyledHeroCard type="herocard" onClick={onClick} disabled={disabled} backgroundColor={backgroundColor} {...props}>
-            {text}
+        <StyledHeroCard disabled={disabled} backgroundColor={backgroundColor} {...props}>
+            <Card />
         </StyledHeroCard>
     )
 };
