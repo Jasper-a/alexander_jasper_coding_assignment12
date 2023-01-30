@@ -1,9 +1,9 @@
 import React,{FC} from 'react';
 import styled from 'styled-components';
 
-import {ButtonProps} from "./Button.types"
+import {TextProps} from "./Text.types"
 
-const StyledButton = styled.button<ButtonProps>`
+const StyledText = styled.text<TextProps>`
     line-height: 1;
     font-size: 15px;
     font-weight: 700;
@@ -18,12 +18,12 @@ const StyledButton = styled.button<ButtonProps>`
     opacity: ${props => props.disabled ? 0.5 : 1};
 `;
 
-const Button: FC<ButtonProps> = ({disabled, text, backgroundColor, onClick, ...props}) => {
+const Text: FC<TextProps> = ({disabled, text, backgroundColor, onClick, ...props}) => {
     return (
-        <StyledButton type="button" onClick={onClick} disabled={disabled} backgroundColor={backgroundColor} {...props}>
+        <StyledText type="text" onClick={onClick} disabled={disabled} backgroundColor={backgroundColor} {...props}>
             {text}
-        </StyledButton>
+        </StyledText>
     )
 };
 
-export default Button;
+export default Text;

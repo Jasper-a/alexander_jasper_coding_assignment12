@@ -1,9 +1,9 @@
 import React,{FC} from 'react';
 import styled from 'styled-components';
 
-import {ButtonProps} from "./Button.types"
+import {RadioButtonProps} from "./RadioButton.types"
 
-const StyledButton = styled.button<ButtonProps>`
+const StyledRadioButton = styled.radiobutton<RadioButtonProps>`
     line-height: 1;
     font-size: 15px;
     font-weight: 700;
@@ -18,12 +18,12 @@ const StyledButton = styled.button<ButtonProps>`
     opacity: ${props => props.disabled ? 0.5 : 1};
 `;
 
-const Button: FC<ButtonProps> = ({disabled, text, backgroundColor, onClick, ...props}) => {
+const RadioButton: FC<RadioButtonProps> = ({disabled, text, backgroundColor, onClick, ...props}) => {
     return (
-        <StyledButton type="button" onClick={onClick} disabled={disabled} backgroundColor={backgroundColor} {...props}>
+        <StyledRadioButton type="radiobutton" onClick={onClick} disabled={disabled} backgroundColor={backgroundColor} {...props}>
             {text}
-        </StyledButton>
+        </StyledRadioButton>
     )
 };
 
-export default Button;
+export default RadioButton;

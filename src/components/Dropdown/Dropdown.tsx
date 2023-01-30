@@ -1,9 +1,9 @@
 import React,{FC} from 'react';
 import styled from 'styled-components';
 
-import {ButtonProps} from "./Button.types"
+import {DropdownProps} from "./Dropdown.types"
 
-const StyledButton = styled.button<ButtonProps>`
+const StyledDropdown = styled.dropdown<DropdownProps>`
     line-height: 1;
     font-size: 15px;
     font-weight: 700;
@@ -18,12 +18,12 @@ const StyledButton = styled.button<ButtonProps>`
     opacity: ${props => props.disabled ? 0.5 : 1};
 `;
 
-const Button: FC<ButtonProps> = ({disabled, text, backgroundColor, onClick, ...props}) => {
+const Dropdown: FC<DropdownProps> = ({disabled, text, backgroundColor, onClick, ...props}) => {
     return (
-        <StyledButton type="button" onClick={onClick} disabled={disabled} backgroundColor={backgroundColor} {...props}>
+        <StyledDropdown type="dropdown" onClick={onClick} disabled={disabled} backgroundColor={backgroundColor} {...props}>
             {text}
-        </StyledButton>
+        </StyledDropdown>
     )
 };
 
-export default Button;
+export default Dropdown;

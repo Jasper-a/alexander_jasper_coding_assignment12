@@ -12,7 +12,7 @@ const StyledLabel = styled.label<LabelProps>`
     display: inline-block;
     padding: 9px 30px 11px;
     border: 0;
-    color: #FFFFFF;
+    color: #000000;
     background-color: ${props => props.backgroundColor};
     cursor: ${props => props.disabled ? "not-allowed" : "pointer"};
     opacity: ${props => props.disabled ? 0.5 : 1};

@@ -1,16 +1,16 @@
 import React from 'react';
 import { Story, Meta } from '@storybook/react';
 
-import Label from './Label';
-import {LabelProps} from "./Label.types";
+import HeroCard  from './HeroCard';
+import {HeroCardProps} from "./HeroCard.types";
 
 export default {
-  title: 'Coding12/Label',
-  component: Label,
+  title: 'Coding12/HeroCard',
+  component: HeroCard,
   argTypes: {},
-} as Meta<typeof Label>;
+} as Meta<typeof HeroCard>;
 
-const Template: Story<LabelProps> = (args) => <Label {...args} />;
+const Template: Story<HeroCardProps> = (args) => <HeroCard {...args} />;
 
 export const Enabled = Template.bind({});
 Enabled.args = {

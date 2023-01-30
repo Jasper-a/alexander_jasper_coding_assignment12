@@ -1,16 +1,16 @@
 import React from 'react';
 import { Story, Meta } from '@storybook/react';
 
-import Label from './Label';
-import {LabelProps} from "./Label.types";
+import Text  from './Text';
+import {TextProps} from "./Text.types";
 
 export default {
-  title: 'Coding12/Label',
-  component: Label,
+  title: 'Coding12/Text',
+  component: Text,
   argTypes: {},
-} as Meta<typeof Label>;
+} as Meta<typeof Text>;
 
-const Template: Story<LabelProps> = (args) => <Label {...args} />;
+const Template: Story<TextProps> = (args) => <Text {...args} />;
 
 export const Enabled = Template.bind({});
 Enabled.args = {

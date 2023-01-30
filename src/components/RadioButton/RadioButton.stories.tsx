@@ -1,16 +1,16 @@
 import React from 'react';
 import { Story, Meta } from '@storybook/react';
 
-import Label from './Label';
-import {LabelProps} from "./Label.types";
+import RadioButton  from './RadioButton';
+import {RadioButtonProps} from "./RadioButton.types";
 
 export default {
-  title: 'Coding12/Label',
-  component: Label,
+  title: 'Coding12/RadioButton',
+  component: RadioButton,
   argTypes: {},
-} as Meta<typeof Label>;
+} as Meta<typeof RadioButton>;
 
-const Template: Story<LabelProps> = (args) => <Label {...args} />;
+const Template: Story<RadioButtonProps> = (args) => <RadioButton {...args} />;
 
 export const Enabled = Template.bind({});
 Enabled.args = {

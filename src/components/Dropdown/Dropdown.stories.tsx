@@ -1,16 +1,16 @@
 import React from 'react';
 import { Story, Meta } from '@storybook/react';
 
-import Label from './Label';
-import {LabelProps} from "./Label.types";
+import Dropdown  from './Dropdown';
+import {DropdownProps} from "./Dropdown.types";
 
 export default {
-  title: 'Coding12/Label',
-  component: Label,
+  title: 'Coding12/Dropdown',
+  component: Dropdown,
   argTypes: {},
-} as Meta<typeof Label>;
+} as Meta<typeof Dropdown>;
 
-const Template: Story<LabelProps> = (args) => <Label {...args} />;
+const Template: Story<DropdownProps> = (args) => <Dropdown {...args} />;
 
 export const Enabled = Template.bind({});
 Enabled.args = {

@@ -14,14 +14,14 @@ const Template: Story<ButtonProps> = (args) => <Button {...args} />;
 
 export const Enabled = Template.bind({});
 Enabled.args = {
-  backgroundColor: "#123456",
+  backgroundColor: "#777799",
   disabled: false,
   text: 'Enabled',
 };
 
 export const Disabled = Template.bind({});
 Disabled.args = {
-  backgroundColor: "#123456",
+  backgroundColor: "#777799",
   disabled: true,
   text: 'Disabled',
 };

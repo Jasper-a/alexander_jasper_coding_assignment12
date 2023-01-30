@@ -1,9 +1,9 @@
 import React,{FC} from 'react';
 import styled from 'styled-components';
 
-import {ButtonProps} from "./Button.types"
+import {TableProps} from "./Table.types"
 
-const StyledButton = styled.button<ButtonProps>`
+const StyledTable = styled.table<TableProps>`
     line-height: 1;
     font-size: 15px;
     font-weight: 700;
@@ -18,12 +18,12 @@ const StyledButton = styled.button<ButtonProps>`
     opacity: ${props => props.disabled ? 0.5 : 1};
 `;
 
-const Button: FC<ButtonProps> = ({disabled, text, backgroundColor, onClick, ...props}) => {
+const Table: FC<TableProps> = ({disabled, text, backgroundColor, onClick, ...props}) => {
     return (
-        <StyledButton type="button" onClick={onClick} disabled={disabled} backgroundColor={backgroundColor} {...props}>
+        <StyledTable type="table" onClick={onClick} disabled={disabled} backgroundColor={backgroundColor} {...props}>
             {text}
-        </StyledButton>
+        </StyledTable>
     )
 };
 
-export default Button;
+export default Table;
