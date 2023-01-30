@@ -7,11 +7,11 @@ import Dropdown from "./Dropdown";
 describe("Running Test for Dropdown", () => {
 
   test("Dropdown is rendered", () => {
-    render(<Dropdown text="test" />);
+    render(<Dropdown />);
   });
 
   test("Dropdown is disabled", () => {
-    render(<Dropdown text="test" disabled/>)
+    render(<Dropdown disabled/>)
     expect(screen.getByRole('dropdown',{name:"test"})).toBeDisabled();
   });
 

@@ -14,14 +14,14 @@ const Template: Story<TextProps> = (args) => <Text {...args} />;
 
 export const Enabled = Template.bind({});
 Enabled.args = {
-  backgroundColor: "#777799",
+  backgroundColor: "#FFFFFF",
   disabled: false,
-  text: 'Enabled',
+  text: 'Enabled Enabled Enabled Enabled',
 };
 
 export const Disabled = Template.bind({});
 Disabled.args = {
-  backgroundColor: "#777799",
+  backgroundColor: "#FFFFFF",
   disabled: true,
-  text: 'Disabled',
+  text: 'Disabled Disabled Disabled Disabled',
 };

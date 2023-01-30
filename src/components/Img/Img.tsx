@@ -4,25 +4,17 @@ import styled from 'styled-components';
 import {ImgProps} from "./Img.types"
 
 const StyledImg = styled.img<ImgProps>`
-    line-height: 1;
-    font-size: 15px;
-    font-weight: 700;
-    font-weight: bold;
-    border-radius: 3px;
     display: inline-block;
     padding: 9px 30px 11px;
-    border: 0;
-    color: #000000;
+    width: ${props => props.width}px;
     background-color: ${props => props.backgroundColor};
-    cursor: ${props => props.disabled ? "not-allowed" : "pointer"};
+    cursor: ${props => props.disabled ? "not-allowed" : "cursor"};
     opacity: ${props => props.disabled ? 0.5 : 1};
 `;
 
-const Img: FC<ImgProps> = ({disabled, text, backgroundColor, onClick, ...props}) => {
+const Img: FC<ImgProps> = ({disabled, src, backgroundColor, width, ...props}) => {
     return (
-        <StyledImg type="img" onClick={onClick} disabled={disabled} backgroundColor={backgroundColor} {...props}>
-            {text}
-        </StyledImg>
+        <StyledImg type="img" disabled={disabled} backgroundColor={backgroundColor} src={src} width={width} {...props} />
     )
 };
 

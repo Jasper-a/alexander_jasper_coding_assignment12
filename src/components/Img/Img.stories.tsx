@@ -1,7 +1,7 @@
 import React from 'react';
 import { Story, Meta } from '@storybook/react';
 
-import Img  from './Img';
+import Img from './Img';
 import {ImgProps} from "./Img.types";
 
 export default {
@@ -14,14 +14,16 @@ const Template: Story<ImgProps> = (args) => <Img {...args} />;
 
 export const Enabled = Template.bind({});
 Enabled.args = {
-  backgroundColor: "#777799",
+  backgroundColor: "#FFFFFF",
   disabled: false,
-  text: 'Enabled',
+  src: 'https://i.kym-cdn.com/entries/icons/mobile/000/018/012/this_is_fine.jpg',
+  width: 250,
 };
 
 export const Disabled = Template.bind({});
 Disabled.args = {
-  backgroundColor: "#777799",
+  backgroundColor: "#FFFFFF",
   disabled: true,
-  text: 'Disabled',
+  src: 'https://i.kym-cdn.com/entries/icons/mobile/000/018/012/this_is_fine.jpg',
+  width: 250,
 };

@@ -1,29 +1,15 @@
-button
-label
-text
-table (header, row, cell, footer)
-dropdown
-radio button
-img
-hero image
-card
+* button
+* label
+* text
+table (need header, row, cell, footer)
+dropdown (broken)
+radio button (broken)
+* img
+hero image (broken)
+card (broken)
 
-each components has:
-base
-stories
-types
-tests
-index.ts
+all:
+remove pointer cursor and onClick as needed
+ensure test succeeds ( {name:"test"}?? )
 
-styles:
-background color
-disabled state (color and cursor change)
-
-storybook options:
-background color
-default text
-enabled/disabled
-
-tests:
-it is visible
-color changes when disabled
+consider ID for label, dropdown, radiobutton?

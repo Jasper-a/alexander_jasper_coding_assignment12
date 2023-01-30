@@ -8,20 +8,24 @@ export default {
   title: 'Coding12/Dropdown',
   component: Dropdown,
   argTypes: {},
-} as Meta<typeof Dropdown>;
+} as Meta<typeof Select>;
 
 const Template: Story<DropdownProps> = (args) => <Dropdown {...args} />;
 
 export const Enabled = Template.bind({});
 Enabled.args = {
-  backgroundColor: "#777799",
+  backgroundColor: "#9999AA",
   disabled: false,
-  text: 'Enabled',
+  option1: "This",
+  option2: "That",
+  option3: "They",
 };
 
 export const Disabled = Template.bind({});
 Disabled.args = {
-  backgroundColor: "#777799",
+  backgroundColor: "#9999AA",
   disabled: true,
-  text: 'Disabled',
+  option1: "This",
+  option2: "That",
+  option3: "They",
 };

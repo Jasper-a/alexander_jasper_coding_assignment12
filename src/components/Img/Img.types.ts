@@ -1,8 +1,8 @@
 import {  MouseEventHandler } from "react";
 
 export interface ImgProps {
-    text?: string,
+    src?: string,
     disabled?: boolean,
     backgroundColor?: string,
-    onClick?: MouseEventHandler<HTMLImgElement>
+    width?: int
 };

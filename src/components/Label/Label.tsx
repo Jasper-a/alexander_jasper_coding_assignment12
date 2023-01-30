@@ -6,11 +6,11 @@ import {LabelProps} from "./Label.types"
 const StyledLabel = styled.label<LabelProps>`
     line-height: 1;
     font-size: 15px;
-    font-weight: 700;
+    font-weight: 400;
     font-weight: bold;
     border-radius: 3px;
     display: inline-block;
-    padding: 9px 30px 11px;
+    padding: 9px 15px 11px;
     border: 0;
     color: #000000;
     background-color: ${props => props.backgroundColor};

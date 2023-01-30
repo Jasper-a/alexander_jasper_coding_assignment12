@@ -1,8 +1,10 @@
 import {  MouseEventHandler } from "react";
 
 export interface DropdownProps {
-    text?: string,
     disabled?: boolean,
     backgroundColor?: string,
-    onClick?: MouseEventHandler<HTMLDropdownElement>
+    onClick?: MouseEventHandler<HTMLDropdownElement>,
+    option1?: string,
+    option2?: string,
+    option3?: string
 };

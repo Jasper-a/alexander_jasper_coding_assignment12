@@ -7,11 +7,11 @@ import RadioButton from "./RadioButton";
 describe("Running Test for RadioButton", () => {
 
   test("RadioButton is rendered", () => {
-    render(<RadioButton text="test" />);
+    render(<RadioButton />);
   });
 
   test("RadioButton is disabled", () => {
-    render(<RadioButton text="test" disabled/>)
+    render(<RadioButton disabled/>)
     expect(screen.getByRole('radiobutton',{name:"test"})).toBeDisabled();
   });
 

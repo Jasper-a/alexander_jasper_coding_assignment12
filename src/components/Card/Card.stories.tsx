@@ -14,14 +14,14 @@ const Template: Story<CardProps> = (args) => <Card {...args} />;
 
 export const Enabled = Template.bind({});
 Enabled.args = {
-  backgroundColor: "#777799",
+  backgroundColor: "#9999AA",
   disabled: false,
   text: 'Enabled',
 };
 
 export const Disabled = Template.bind({});
 Disabled.args = {
-  backgroundColor: "#777799",
+  backgroundColor: "#9999AA",
   disabled: true,
   text: 'Disabled',
 };
