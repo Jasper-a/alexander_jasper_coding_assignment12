@@ -1,6 +1,6 @@
 import React from "react";
 import '@testing-library/jest-dom';
-import {render, screen } from '@testing-library/react';
+import { render, screen } from '@testing-library/react';
 
 import RadioButton from "./RadioButton";
 
@@ -11,8 +11,8 @@ describe("Running Test for RadioButton", () => {
   });
 
   test("RadioButton is disabled", () => {
-    render(<RadioButton disabled/>)
-    expect(screen.getByRole('radio',{name:"test"})).toBeDisabled();
+    render(<RadioButton disabled={true} role="radiobutton" />)
+    expect(screen.getByRole('radiobutton')).toBeDisabled();
   });
 
 });
