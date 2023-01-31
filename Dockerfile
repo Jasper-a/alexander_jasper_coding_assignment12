@@ -13,4 +13,4 @@ ENV PORT 8083
 EXPOSE 8083
 
 COPY . .
-CMD ["npm", "run storybook"]
+CMD ["npm", "run", "storybook"]
