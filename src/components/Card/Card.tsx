@@ -19,8 +19,8 @@ const Card: FC<CardProps> = ({disabled, title, text, src, img_width, backgroundC
     return (
         <StyledCard disabled={disabled} backgroundColor={backgroundColor} {...props}>
         <Img src={src} width={img_width} />
-        <Text text={title} display="block" bold="true" />
-        <Text text={text} display="block" />
+        <Text text={title} centered="false" display="block" size="20px" />
+        <Text text={text} centered="false" display="block" size="15px" />
         </StyledCard>
     )
 };

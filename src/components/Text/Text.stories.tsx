@@ -18,7 +18,7 @@ Enabled.args = {
   disabled: false,
   text: 'Enabled Enabled Enabled Enabled',
   display: "inline-block",
-  bold: false,
+  size: "15px",
 };
 
 export const Disabled = Template.bind({});
@@ -27,5 +27,5 @@ Disabled.args = {
   disabled: true,
   text: 'Disabled Disabled Disabled Disabled',
   display: "inline-block",
-  bold: false,
+  size: "15px",
 };

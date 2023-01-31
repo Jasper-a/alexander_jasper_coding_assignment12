@@ -17,7 +17,8 @@ Enabled.args = {
   backgroundColor: "#FFFFFF",
   disabled: false,
   src: 'https://i.kym-cdn.com/entries/icons/mobile/000/018/012/this_is_fine.jpg',
-  width: 250,
+  width: "250px",
+  opacity: 1.00,
 };
 
 export const Disabled = Template.bind({});
@@ -25,5 +26,6 @@ Disabled.args = {
   backgroundColor: "#FFFFFF",
   disabled: true,
   src: 'https://i.kym-cdn.com/entries/icons/mobile/000/018/012/this_is_fine.jpg',
-  width: 250,
+  width: "250px",
+  opacity: 1.00,
 };

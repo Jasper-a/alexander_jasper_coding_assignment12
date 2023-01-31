@@ -5,7 +5,7 @@ table (need header, row, cell, footer)
 * dropdown
 * radio button
 * img
-hero image (broken)
+* hero image
 * card
 
 all:
@@ -13,7 +13,3 @@ remove pointer cursor and onClick as needed
 ensure test succeeds ( {name:"test"}?? )
 styled.* needs proper element name
 is onClick broken? (*.types.ts HTML*Element)
-
-text:
-add centering option (use in card and herocard)
-add size option (use in card and herocard)

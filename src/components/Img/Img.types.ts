@@ -4,5 +4,6 @@ export interface ImgProps {
     src?: string,
     disabled?: boolean,
     backgroundColor?: string,
-    width?: int
+    width?: string,
+    opacity?: float
 };

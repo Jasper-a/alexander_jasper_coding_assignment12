@@ -5,9 +5,8 @@ import {TextProps} from "./Text.types"
 
 const StyledText = styled.text<TextProps>`
     line-height: 1;
-    font-size: ${props => props.bold ? "20px" : "15px"};
+    font-size: ${props => props.size};
     font-weight: 400;
-    font-weight: ${props => props.bold ? "bold" : ""};
     padding: 9px 10px 11px;
     display: ${props => props.display};
     border: 0;
@@ -17,9 +16,9 @@ const StyledText = styled.text<TextProps>`
     opacity: ${props => props.disabled ? 0.5 : 1};
 `;
 
-const Text: FC<TextProps> = ({disabled, text, backgroundColor, display, bold, ...props}) => {
+const Text: FC<TextProps> = ({disabled, text, backgroundColor, display, size, ...props}) => {
     return (
-        <StyledText disabled={disabled} backgroundColor={backgroundColor} display={display} bold={bold} {...props}>
+        <StyledText disabled={disabled} backgroundColor={backgroundColor} display={display} size={size} {...props}>
             {text}
         </StyledText>
     )

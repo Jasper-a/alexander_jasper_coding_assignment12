@@ -14,14 +14,16 @@ const Template: Story<HeroCardProps> = (args) => <HeroCard {...args} />;
 
 export const Enabled = Template.bind({});
 Enabled.args = {
-  backgroundColor: "#9999AA",
+  src: "https://i.kym-cdn.com/entries/icons/mobile/000/018/012/this_is_fine.jpg",
   disabled: false,
-  text: 'Enabled',
+  title: 'Enabled',
+  text: 'Enabled Enabled',
 };
 
 export const Disabled = Template.bind({});
 Disabled.args = {
-  backgroundColor: "#9999AA",
+  src: "https://i.kym-cdn.com/entries/icons/mobile/000/018/012/this_is_fine.jpg",
   disabled: true,
-  text: 'Disabled',
+  title: 'Disabled',
+  text: 'Disabled Disabled',
 };

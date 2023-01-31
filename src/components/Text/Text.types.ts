@@ -5,5 +5,5 @@ export interface TextProps {
     disabled?: boolean,
     backgroundColor?: string,
     display?: string,
-    bold?: boolean
+    size?: int
 };
