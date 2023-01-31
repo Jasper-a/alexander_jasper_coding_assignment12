@@ -3,8 +3,8 @@
   "publishConfig": {
     "registry": "https://npm.pkg.github.com/jasper-a"
   },
-  "version": "3.1.0",
-  "description": "Storybook is working now instead of deleting all my unsaved files",
+  "version": "3.2.0",
+  "description": "",
   "main": "dist/cjs/index.js",
   "module": "dist/esm/index.js",
   "files": [
@@ -14,7 +14,7 @@
   "scripts": {
     "rollup": "rollup -c",
     "test": "jest",
-    "storybook": "start-storybook -p 6006",
+    "storybook": "start-storybook -p 8083",
     "build-storybook": "build-storybook"
   },
   "author": "",
